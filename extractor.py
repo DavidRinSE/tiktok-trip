@@ -10,6 +10,17 @@ Return a JSON array of objects. Each object should have:
 - "neighborhood": The NYC neighborhood if mentioned (e.g. "East Village", "Williamsburg")
 - "description": What was recommended — specific dishes, activities, tips mentioned
 - "confidence": "high" if the place was named explicitly, "medium" if you're making an educated guess, "low" if very uncertain
+- "emoji": A single emoji representing this place. Follow these conventions:
+  - restaurant → 🍽️
+  - bar → 🍸
+  - cafe/coffee → ☕
+  - bakery → 🧁
+  - pizza → 🍕
+  - attraction → 🎭
+  - shop → 🛍️
+  - hotel → 🏨
+  - park → 🌳
+  Use a more specific emoji when appropriate (e.g. 🍜 for a noodle shop, 🎤 for a comedy club, 🎨 for a gallery).
 
 Rules:
 - Only extract real, specific places — not generic advice like "eat pizza"

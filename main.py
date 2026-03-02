@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""CLI tool to extract place recommendations from TikTok videos and export to Google My Maps."""
+"""CLI tool to extract place recommendations from TikTok videos and export to a Mapbox map."""
 
 import argparse
 import json
+import math
 import os
+import subprocess
 import sys
 
 from tqdm import tqdm
@@ -13,7 +15,7 @@ from downloader import download
 from transcriber import transcribe
 from extractor import extract_places
 from geocoder import geocode
-from exporter import export_csv
+from exporter import export_geojson, load_geojson
 
 
 def load_cache() -> dict:
@@ -41,6 +43,77 @@ def deduplicate(places: list[dict]) -> list[dict]:
             if place.get("source_url") != existing.get("source_url"):
                 existing["description"] = existing.get("description", "") + " | Also mentioned in: " + place.get("source_url", "")
     return list(seen.values())
+
+
+def _haversine_m(lat1, lon1, lat2, lon2):
+    """Return distance in metres between two lat/lng points."""
+    R = 6_371_000
+    rlat1, rlat2 = math.radians(lat1), math.radians(lat2)
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = math.sin(dlat / 2) ** 2 + math.cos(rlat1) * math.cos(rlat2) * math.sin(dlon / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def merge_with_existing(new_places: list[dict], geojson_path: str) -> list[dict]:
+    """Load existing GeoJSON features and merge new places, deduplicating by name + proximity."""
+    existing_features = load_geojson(geojson_path)
+    if not existing_features:
+        return new_places
+
+    # Convert existing GeoJSON features back to place dicts
+    existing_places = []
+    for feat in existing_features:
+        props = feat.get("properties", {})
+        coords = feat.get("geometry", {}).get("coordinates", [None, None])
+        place = {
+            "google_name": props.get("name", ""),
+            "name": props.get("name", ""),
+            "emoji": props.get("emoji", "📍"),
+            "type": props.get("category", "").lower(),
+            "neighborhood": props.get("neighborhood", ""),
+            "description": props.get("description", ""),
+            "source_url": props.get("tiktok_url", ""),
+            "formatted_address": props.get("address", ""),
+            "rating": props.get("rating"),
+            "lng": coords[0],
+            "lat": coords[1],
+        }
+        existing_places.append(place)
+
+    # Merge: check each new place against existing by name + ~50m proximity
+    for new_place in new_places:
+        is_dup = False
+        new_name = (new_place.get("google_name") or new_place.get("name", "")).lower()
+        new_lat = new_place.get("lat")
+        new_lng = new_place.get("lng")
+
+        for existing in existing_places:
+            ex_name = (existing.get("google_name") or existing.get("name", "")).lower()
+            ex_lat = existing.get("lat")
+            ex_lng = existing.get("lng")
+
+            if new_name == ex_name:
+                # Same name — check proximity if coords available
+                if new_lat and new_lng and ex_lat and ex_lng:
+                    dist = _haversine_m(new_lat, new_lng, ex_lat, ex_lng)
+                    if dist < 50:
+                        # Merge description
+                        if new_place.get("source_url") != existing.get("source_url"):
+                            existing["description"] = existing.get("description", "") + " | Also mentioned in: " + new_place.get("source_url", "")
+                        is_dup = True
+                        break
+                else:
+                    # No coords to compare — treat same name as duplicate
+                    if new_place.get("source_url") != existing.get("source_url"):
+                        existing["description"] = existing.get("description", "") + " | Also mentioned in: " + new_place.get("source_url", "")
+                    is_dup = True
+                    break
+
+        if not is_dup:
+            existing_places.append(new_place)
+
+    return existing_places
 
 
 def process_url(url: str, cache: dict) -> list[dict]:
@@ -86,11 +159,25 @@ def process_url(url: str, cache: dict) -> list[dict]:
     return places
 
 
+def deploy(geojson_path: str):
+    """Auto-commit and push the GeoJSON data."""
+    try:
+        subprocess.run(["git", "add", geojson_path], check=True)
+        subprocess.run(["git", "commit", "-m", "Update places data"], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+        print("Deployed: committed and pushed to origin/main")
+    except subprocess.CalledProcessError as e:
+        print(f"Deploy failed: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Extract places from TikTok videos for Google My Maps")
+    parser = argparse.ArgumentParser(description="Extract places from TikTok videos for an interactive map")
     parser.add_argument("--input", "-i", default="urls.txt", help="File with TikTok URLs, one per line")
-    parser.add_argument("--output", "-o", default="nyc_spots.csv", help="Output CSV base name (produces _food.csv and _attractions.csv)")
+    parser.add_argument("--output", "-o", default="docs/places.geojson", help="Output GeoJSON path (default: docs/places.geojson)")
     parser.add_argument("--no-cache", action="store_true", help="Ignore cached results")
+    parser.add_argument("--append", action="store_true", help="Merge new places into existing GeoJSON, deduplicating by name + proximity")
+    parser.add_argument("--deploy", action="store_true", help="After export, git add/commit/push the GeoJSON to origin/main")
     args = parser.parse_args()
 
     # Validate config
@@ -124,21 +211,27 @@ def main():
             errors.append((url, str(e)))
             print(f"  ERROR: {e}")
 
-    # Deduplicate
+    # Deduplicate within this run
     all_places = deduplicate(all_places)
 
+    # Merge with existing data if --append
+    if args.append:
+        all_places = merge_with_existing(all_places, args.output)
+        print(f"Merged with existing data from {args.output}")
+
     # Export
-    food_path, attractions_path = export_csv(all_places, args.output)
-    food_count = sum(1 for p in all_places if p.get("layer") == "Food & Drink")
-    attr_count = len(all_places) - food_count
-    print(f"\nExported {len(all_places)} place(s):")
-    print(f"  {food_count} food spot(s) → {food_path}")
-    print(f"  {attr_count} attraction(s) → {attractions_path}")
+    output_path = export_geojson(all_places, args.output)
+    geocoded = sum(1 for p in all_places if p.get("lat") or p.get("lng"))
+    print(f"\nExported {len(all_places)} place(s) ({geocoded} geocoded) to {output_path}")
 
     if errors:
         print(f"\n{len(errors)} URL(s) failed:")
         for url, err in errors:
             print(f"  {url}: {err}")
+
+    # Deploy if requested
+    if args.deploy:
+        deploy(args.output)
 
 
 if __name__ == "__main__":

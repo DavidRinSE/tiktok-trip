@@ -1,8 +1,10 @@
-# TikTok to Google Maps
+# TikTok Trip Map
 
-Extracts restaurant and attraction recommendations from TikTok videos and exports them as CSV files you can import into Google My Maps.
+Turn TikTok travel recommendations into your own interactive map. Drop in TikTok URLs, run the pipeline, and get a mobile-friendly Mapbox site with emoji markers, category filters, and directions — hosted free on GitHub Pages.
 
-**Pipeline:** TikTok URL → yt-dlp (download audio) → whisper.cpp (transcribe) → Claude (extract places) → Google Places API (geocode) → CSV
+Fork this repo, add your TikTok URLs, and you'll have a shareable map of every spot in minutes.
+
+**Pipeline:** TikTok URL → yt-dlp (download audio) → whisper.cpp (transcribe) → Claude (extract places + emoji) → Google Places API (geocode) → GeoJSON → Mapbox static site
 
 ## Prerequisites
 
@@ -11,13 +13,16 @@ Extracts restaurant and attraction recommendations from TikTok videos and export
 - A local [whisper.cpp](https://github.com/ggerganov/whisper.cpp) server
 - An [Anthropic API key](https://console.anthropic.com/)
 - A [Google Cloud API key](https://console.cloud.google.com/) with the Places API (New) enabled
+- A [Mapbox access token](https://account.mapbox.com/) (free tier works fine)
 
 ## Setup
 
-### 1. Clone and install dependencies
+### 1. Fork and clone
+
+Fork this repo on GitHub, then:
 
 ```bash
-git clone <repo-url> && cd tiktok-trip
+git clone <your-fork-url> && cd tiktok-trip
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
@@ -75,6 +80,14 @@ WHISPER_SERVER_URL=http://127.0.0.1:8080/inference  # default
 CLAUDE_MODEL=claude-sonnet-4-5-20250929              # default
 ```
 
+### 5. Add your Mapbox token
+
+Open `docs/index.html` and replace `YOUR_MAPBOX_TOKEN` with your token from [account.mapbox.com](https://account.mapbox.com/).
+
+### 6. Enable GitHub Pages
+
+In your fork's repo settings, go to **Pages** and set the source to deploy from the `main` branch, `/docs` folder.
+
 ## Usage
 
 Add TikTok URLs to `urls.txt` (one per line, `#` comments are supported):
@@ -91,39 +104,30 @@ Run the pipeline:
 python3 main.py
 ```
 
-Options:
+This generates `docs/places.geojson` which powers the map at `docs/index.html`.
+
+### Options
 
 ```
 -i, --input FILE    Input file with TikTok URLs (default: urls.txt)
--o, --output FILE   Output CSV base name (default: nyc_spots.csv)
+-o, --output FILE   Output GeoJSON path (default: docs/places.geojson)
 --no-cache          Ignore cached results and re-process everything
+--append            Merge new places into existing GeoJSON (deduplicates by name + proximity)
+--deploy            Auto-commit and push the GeoJSON to origin/main after export
 ```
 
-This produces two CSV files: `nyc_spots_food.csv` and `nyc_spots_attractions.csv`.
+### Adding more spots later
+
+Use `--append` to add new TikTok URLs without losing your existing places:
+
+```bash
+python3 main.py --append
+```
+
+To update and publish in one step:
+
+```bash
+python3 main.py --append --deploy
+```
 
 Results are cached in `cache.json` so re-running skips already-processed URLs.
-
-## Importing into Google My Maps
-
-1. Go to [mymaps.google.com](https://mymaps.google.com) and click **"+ Create a new map"**
-2. Name your map (click "Untitled map" in the top left)
-
-**Import the Food layer:**
-
-3. Click **Import** under the default layer
-4. Upload `nyc_spots_food.csv`
-5. Select **Latitude** and **Longitude** as position columns
-6. Select **Name** as the marker title column
-7. Click **Finish**, then rename the layer to "Food"
-
-**Import the Attractions layer:**
-
-8. Click **Add layer**
-9. Click **Import** on the new layer
-10. Upload `nyc_spots_attractions.csv`
-11. Same column selections as above — **Latitude**/**Longitude** for position, **Name** for title
-12. Click **Finish**, then rename the layer to "Attractions"
-
-**Style the pins (optional):**
-
-Click the paint bucket icon under each layer to give Food and Attractions different colors. Each pin's description includes the TikTok summary, Google rating, and source link.
