@@ -1,0 +1,15 @@
+[project]
+name = "tiktok-to-maps"
+version = "0.1.0"
+description = "Extract place recommendations from TikTok videos and export to Google My Maps"
+requires-python = ">=3.10"
+dependencies = [
+    "yt-dlp",
+    "anthropic",
+    "requests",
+    "tqdm",
+    "python-dotenv",
+]
+
+[project.scripts]
+tiktok-to-maps = "main:main"

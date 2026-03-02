@@ -1,0 +1,9 @@
+# Paste TikTok URLs below, one per line
+# Lines starting with # are ignored
+https://www.tiktok.com/t/ZThngDdgr/
+https://www.tiktok.com/t/ZThngb1r9/
+https://www.tiktok.com/t/ZThngkPjW/
+https://www.tiktok.com/t/ZThngDrVG/
+https://www.tiktok.com/t/ZThng5P3B/
+https://www.tiktok.com/t/ZThnnp21Q/
+https://www.tiktok.com/t/ZThnnvsvT/

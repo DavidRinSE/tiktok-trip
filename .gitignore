@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+
+# Environment
+.env
+
+# App outputs
+downloads/
+cache.json
+*.csv
