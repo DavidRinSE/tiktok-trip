@@ -1,0 +1,965 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0438277,
+          40.6725832
+        ]
+      },
+      "properties": {
+        "name": "Staten Island Ferry",
+        "emoji": "⛴️",
+        "category": "Attraction",
+        "neighborhood": "Lower Manhattan",
+        "description": "Free ferry ride with views of Statue of Liberty and harbor",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Staten Island Ferry, United States",
+        "rating": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9855426,
+          40.7579747
+        ]
+      },
+      "properties": {
+        "name": "Times Square",
+        "emoji": "🎭",
+        "category": "Attraction",
+        "neighborhood": "Midtown Manhattan",
+        "description": "Iconic entertainment and commercial hub with bright lights and billboards",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Manhattan, NY 10036, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.04450039999999,
+          40.6892494
+        ]
+      },
+      "properties": {
+        "name": "Statue of Liberty",
+        "emoji": "🗽",
+        "category": "Attraction",
+        "neighborhood": "Liberty Island",
+        "description": "View the iconic statue (free to view from distance)",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "New York, NY 10004, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9655834,
+          40.7825547
+        ]
+      },
+      "properties": {
+        "name": "Central Park",
+        "emoji": "🌳",
+        "category": "Park",
+        "neighborhood": "Manhattan",
+        "description": "Massive urban park perfect for walking, relaxing, and sightseeing",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "New York, NY, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99077419999999,
+          40.7074959
+        ]
+      },
+      "properties": {
+        "name": "Manhattan Bridge",
+        "emoji": "🌉",
+        "category": "Attraction",
+        "neighborhood": "Lower Manhattan to Brooklyn",
+        "description": "Iconic bridge with great views and photo opportunities",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Manhattan Brg, New York, NY 11201, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9968643,
+          40.7060855
+        ]
+      },
+      "properties": {
+        "name": "Brooklyn Bridge",
+        "emoji": "🌉",
+        "category": "Attraction",
+        "neighborhood": "Lower Manhattan to Brooklyn",
+        "description": "Historic suspension bridge with pedestrian walkway and stunning views | Also mentioned in: https://www.tiktok.com/t/ZThngDrVG/",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "New York, NY 10038, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0133362,
+          40.7115776
+        ]
+      },
+      "properties": {
+        "name": "9/11 Memorial & Museum",
+        "emoji": "🕊️",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Memorial honoring the victims of the September 11 attacks | Also mentioned in: https://www.tiktok.com/t/ZThngDrVG/",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "180 Greenwich St, New York, NY 10007, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9881451,
+          40.7033164
+        ]
+      },
+      "properties": {
+        "name": "Dumbo",
+        "emoji": "📸",
+        "category": "Attraction",
+        "neighborhood": "DUMBO",
+        "description": "Down Under the Manhattan Bridge Overpass - trendy waterfront area with great photo spots | Also mentioned in: https://www.tiktok.com/t/ZThngDrVG/",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Dumbo, Brooklyn, NY 11201, USA",
+        "rating": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99057119999999,
+          40.7043517
+        ]
+      },
+      "properties": {
+        "name": "Pebble Beach",
+        "emoji": "🏖️",
+        "category": "Park",
+        "neighborhood": "Brooklyn",
+        "description": "Waterfront beach area with Manhattan skyline views | Also mentioned in: https://www.tiktok.com/t/ZThngDrVG/",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "65 Plymouth St, Brooklyn, NY 11201, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0021537,
+          40.7538073
+        ]
+      },
+      "properties": {
+        "name": "Vessel",
+        "emoji": "🪜",
+        "category": "Attraction",
+        "neighborhood": "Hudson Yards",
+        "description": "Honeycomb-like climbable structure and architectural landmark",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "20 Hudson Yards, New York, NY 10001, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0114261,
+          40.7115663
+        ]
+      },
+      "properties": {
+        "name": "Oculus World Trade Center",
+        "emoji": "⚪",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Stunning white architectural transportation hub and shopping center",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "185 Greenwich St LL3110, New York, NY 10006, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.995465,
+          40.70108400000001
+        ]
+      },
+      "properties": {
+        "name": "Squibb Park",
+        "emoji": "🌳",
+        "category": "Park",
+        "neighborhood": "Brooklyn Heights",
+        "description": "Small park with bridge access and views",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Middagh St, Brooklyn, NY 11201, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9828092,
+          40.7508675
+        ]
+      },
+      "properties": {
+        "name": "5th Avenue",
+        "emoji": "🛍️",
+        "category": "Attraction",
+        "neighborhood": "Midtown Manhattan",
+        "description": "Famous shopping street with luxury stores and window displays",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "5th Ave, New York, NY, USA",
+        "rating": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00827869999999,
+          40.7077143
+        ]
+      },
+      "properties": {
+        "name": "Financial District",
+        "emoji": "🏛️",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Historic business district with notable architecture and landmarks",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDdgr/",
+        "address": "Financial District, New York, NY, USA",
+        "rating": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9834738,
+          40.7296968
+        ]
+      },
+      "properties": {
+        "name": "Pastasole",
+        "emoji": "🍝",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Viral parmesan wheel pasta - fresh homemade pasta cooked in massive imported Italian parmesan wheels right in front of you at a street-side window. Plain fettuccine is $9.90. Most popular dish has mushrooms, caramelized onions, and truffle oil. Huge portions with massive amounts of parmesan cheese.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngb1r9/",
+        "address": "192 1st Ave, New York, NY 10009, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89421220000001,
+          41.5284903
+        ]
+      },
+      "properties": {
+        "name": "Gymkhana Cuisine Of India",
+        "emoji": "🍛",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "One of only two Michelin-starred Indian restaurants in the world (located in London, not NYC). Known for golgappa (traditional street food), butter chicken ($38), tandoori masala lamb chops ($85), and venison biryani served tableside. Dark mahogany interior with velvet seats. Chef grew up in India and has been cooking since age 5.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngb1r9/",
+        "address": "18 Westage Dr #12, Fishkill, NY 12524, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.978849,
+          40.7295405
+        ]
+      },
+      "properties": {
+        "name": "KIJITORA E14th",
+        "emoji": "🍵",
+        "category": "Cafe",
+        "neighborhood": null,
+        "description": "Strawberry matcha drink",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "534 E 14th St, New York, NY 10009, USA",
+        "rating": 4.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9847935,
+          40.728754699999996
+        ]
+      },
+      "properties": {
+        "name": "Apollo Bagels",
+        "emoji": "🥯",
+        "category": "Bakery",
+        "neighborhood": null,
+        "description": "Lox bagel and tomato bagel",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "242 E 10th St, New York, NY 10003, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9731084,
+          40.6860572
+        ]
+      },
+      "properties": {
+        "name": "Theodora",
+        "emoji": "🍽️",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Ricotta toast with sage and honey",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "7 Greene Ave, Brooklyn, NY 11238, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98765399999999,
+          40.757321399999995
+        ]
+      },
+      "properties": {
+        "name": "LOS TACOS No.1",
+        "emoji": "🌮",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Chicken and pork tacos on corn tortilla",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "229 W 43rd St, New York, NY 10036, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95873759999999,
+          40.78348760000001
+        ]
+      },
+      "properties": {
+        "name": "Dr. Minisha Sood, MD",
+        "emoji": "🍛",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Calsoy (creamy, flavorful with tender chicken)",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "1080 5th Ave # 1a, New York, NY 10128, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0049081,
+          40.733222399999995
+        ]
+      },
+      "properties": {
+        "name": "L’industrie Pizzeria West Village",
+        "emoji": "🍕",
+        "category": "Pizza",
+        "neighborhood": null,
+        "description": "Burrata slice (also tried fig jam bacon)",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "104 Christopher St, New York, NY 10014, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0027877,
+          40.7270639
+        ]
+      },
+      "properties": {
+        "name": "Shuka",
+        "emoji": "🧀",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Fried halloumi - must order",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "38 MacDougal St, New York, NY 10012, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.015706,
+          40.7129499
+        ]
+      },
+      "properties": {
+        "name": "Mah-Ze-Dahr",
+        "emoji": "🧁",
+        "category": "Bakery",
+        "neighborhood": null,
+        "description": "Scone - buttery, fluffy inside with golden crust, served with jam",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "225 Liberty St, New York, NY 10281, USA",
+        "rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9947842,
+          40.695205099999995
+        ]
+      },
+      "properties": {
+        "name": "L'Appartement 4F",
+        "emoji": "🥐",
+        "category": "Bakery",
+        "neighborhood": null,
+        "description": "Pistachio rose croissant and raspberry almond croissant",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "115 Montague St, Brooklyn, NY 11201, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00209389999999,
+          40.7378037
+        ]
+      },
+      "properties": {
+        "name": "Don Angie",
+        "emoji": "🍝",
+        "category": "Restaurant",
+        "neighborhood": null,
+        "description": "Buffalo milk caramel (favorite from the whole spread)",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "103 Greenwich Ave, New York, NY 10014, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9867455,
+          40.7370091
+        ]
+      },
+      "properties": {
+        "name": "Caffè Panna",
+        "emoji": "🍨",
+        "category": "Shop",
+        "neighborhood": null,
+        "description": "Cookies and Pana ice cream with Pana fudge and graham cracker crumbles",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "77 Irving Pl, New York, NY 10003, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9899368,
+          40.7290987
+        ]
+      },
+      "properties": {
+        "name": "Hani’s bakery + café",
+        "emoji": "🍪",
+        "category": "Bakery",
+        "neighborhood": null,
+        "description": "Triple chocolate chip cookie - crisp edges, chewy soft middle, depth of flavor from salt and different chocolates",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "67 Cooper Sq, New York, NY 10003, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0002529,
+          40.7279221
+        ]
+      },
+      "properties": {
+        "name": "Popup Bagels",
+        "emoji": "🥯",
+        "category": "Bakery",
+        "neighborhood": null,
+        "description": "Salt bagel with scallion cream cheese schmear - lives up to the hype",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
+        "address": "177 Thompson St, New York, NY 10012, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9923292,
+          40.703281499999996
+        ]
+      },
+      "properties": {
+        "name": "Butler",
+        "emoji": "☕",
+        "category": "Cafe",
+        "neighborhood": "Brooklyn",
+        "description": "Coffee spot near Dumbo/Brooklyn Bridge area. Very busy, recommend takeaway.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "40 Water St, Brooklyn, NY 11201, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.009503,
+          40.715863999999996
+        ]
+      },
+      "properties": {
+        "name": "Zucker's Bagels & Smoked Fish",
+        "emoji": "🥯",
+        "category": "Bakery",
+        "neighborhood": "Brooklyn",
+        "description": "Breakfast bagels after Brooklyn Bridge walk.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "143 Chambers St, New York, NY 10007, USA",
+        "rating": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.013173,
+          40.713006199999995
+        ]
+      },
+      "properties": {
+        "name": "One World Observatory",
+        "emoji": "🏙️",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Incredible views of NYC skyline from above. Animation in lift as you go up, skyline revealed at the top. Highly recommended.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "117 West St, New York, NY 10007, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0133104,
+          40.7013332
+        ]
+      },
+      "properties": {
+        "name": "Staten Island Ferry",
+        "emoji": "⛴️",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Completely free round trip with amazing views of Statue of Liberty. Ignore people selling excursions at the port.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "4 Whitehall St, New York, NY 10004, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00871029999999,
+          40.7142906
+        ]
+      },
+      "properties": {
+        "name": "LOS TACOS No.1",
+        "emoji": "🌮",
+        "category": "Restaurant",
+        "neighborhood": "Financial District",
+        "description": "Steak tacos and chicken quesadilla recommended. Great for lunch.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "136 Church St, New York, NY 10007, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0134499,
+          40.7055746
+        ]
+      },
+      "properties": {
+        "name": "Charging Bull",
+        "emoji": "🐂",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Iconic Wall Street statue to walk by.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "Bowling Green, New York, NY 10004, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0112654,
+          40.706877
+        ]
+      },
+      "properties": {
+        "name": "New York Stock Exchange",
+        "emoji": "💼",
+        "category": "Attraction",
+        "neighborhood": "Financial District",
+        "description": "Historic building to see while walking around Financial District.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "11 Wall St, New York, NY 10005, USA",
+        "rating": 4.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0111541,
+          40.7075417
+        ]
+      },
+      "properties": {
+        "name": "Ten Thousand Coffee",
+        "emoji": "☕",
+        "category": "Cafe",
+        "neighborhood": "Financial District",
+        "description": "Try the Einspänner (coffee drink). Great spot for afternoon coffee.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "14 Wall St, New York, NY 10005, USA",
+        "rating": 4.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9858825,
+          40.7604459
+        ]
+      },
+      "properties": {
+        "name": "Longacre Theatre",
+        "emoji": "🎭",
+        "category": "Attraction",
+        "neighborhood": "Broadway",
+        "description": "Broadway musical - highly recommended. Listen to soundtrack beforehand, even better in person.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
+        "address": "220 W 48th St, New York, NY 10036, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9641664,
+          40.7612789
+        ]
+      },
+      "properties": {
+        "name": "Roosevelt Island Tramway",
+        "emoji": "🚡",
+        "category": "Attraction",
+        "neighborhood": "Roosevelt Island",
+        "description": "Scenic aerial tramway ride with views across New York. A unique way to experience the city from above.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThng5P3B/",
+        "address": "254 E 60th St, New York, NY 10022, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9959712,
+          40.7722536
+        ]
+      },
+      "properties": {
+        "name": "Pier 97 at Hudson River Park",
+        "emoji": "🌊",
+        "category": "Park",
+        "neighborhood": "Hudson River Park",
+        "description": "2.5 acre waterfront oasis along the Hudson River with a massive sports field with blue turf, beautiful cabana area for skyline views, super fast adult slide with NYC in the background, and great sunset views",
+        "tiktok_url": "https://www.tiktok.com/t/ZThnnp21Q/",
+        "address": "Hudson River Greenway, New York, NY 10019, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0106802,
+          40.7436531
+        ]
+      },
+      "properties": {
+        "name": "Pier 57 Rooftop Park",
+        "emoji": "🌳",
+        "category": "Park",
+        "neighborhood": "Hudson River Park",
+        "description": "Elevated free rooftop park with sweeping views of the Hudson River and NYC skyline. Access via elevator from the market level (hit button for 'park')",
+        "tiktok_url": "https://www.tiktok.com/t/ZThnnp21Q/",
+        "address": "57 Hudson River Greenway, New York, NY 10011, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9884141,
+          40.709451699999995
+        ]
+      },
+      "properties": {
+        "name": "Pier 35",
+        "emoji": "🌅",
+        "category": "Park",
+        "neighborhood": "Lower Manhattan",
+        "description": "Giant swings overlooking the East River with sunset views of the Manhattan Bridge and Lower Manhattan",
+        "tiktok_url": "https://www.tiktok.com/t/ZThnnp21Q/",
+        "address": "FDR Dr, New York, NY 10002, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9833014,
+          40.7253574
+        ]
+      },
+      "properties": {
+        "name": "Nowon East Village",
+        "emoji": "🍽️",
+        "category": "Restaurant",
+        "neighborhood": "",
+        "description": "Korean-American fusion with a $49 prefix menu that includes: Caesar salad, choice of lamb or shrimp skewers, chicken, chopped cheese rice cakes (described as favorite dish in NYC), burger, and honey butter tots (described as best tater tots ever). Great for birthday dinners.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThnnvsvT/",
+        "address": "507 E 6th St, New York, NY 10009, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.963244,
+          40.7794366
+        ]
+      },
+      "properties": {
+        "name": "The Metropolitan Museum of Art",
+        "emoji": "🎨",
+        "category": "Attraction",
+        "neighborhood": "Upper East Side",
+        "description": "Suggested admission donation is pay-what-you-wish ($5-10 recommended). Multiple exhibits spanning different eras. Great for solo visits or groups. Sit on the iconic Met steps for people watching and Gossip Girl vibes.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThWR16YT/",
+        "address": "1000 5th Ave, New York, NY 10028, USA",
+        "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9739882,
+          40.7813241
+        ]
+      },
+      "properties": {
+        "name": "American Museum of Natural History",
+        "emoji": "🐋",
+        "category": "Attraction",
+        "neighborhood": "Upper West Side",
+        "description": "Museum featuring ocean exhibits, whales, and sea life displays",
+        "tiktok_url": "https://www.tiktok.com/t/ZThWRA5Yn/",
+        "address": "200 Central Prk W, New York, NY 10024, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97762159999999,
+          40.7614327
+        ]
+      },
+      "properties": {
+        "name": "The Museum of Modern Art",
+        "emoji": "🎨",
+        "category": "Attraction",
+        "neighborhood": "Midtown Manhattan",
+        "description": "Modern art museum recommended as a date spot or solo visit. The video is specifically about visiting MoMA.",
+        "tiktok_url": "https://www.tiktok.com/t/ZThWRY4mS/",
+        "address": "11 W 53rd St, New York, NY 10019, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97659759999999,
+          40.7581457
+        ]
+      },
+      "properties": {
+        "name": "Louis Vuitton New York Saks Fifth Ave",
+        "emoji": "🛍️",
+        "category": "Shop",
+        "neighborhood": "Midtown",
+        "description": "New Louis Vuitton flagship store described as a work of art, notable architecture worth visiting",
+        "tiktok_url": "https://www.tiktok.com/t/ZThWRmvj5/",
+        "address": "611 5th Ave 1st floor 1st floor, New York, NY 10022, USA",
+        "rating": 4.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0026642,
+          40.7309517
+        ]
+      },
+      "properties": {
+        "name": "Colorful Natalie",
+        "emoji": "🎀",
+        "category": "Shop",
+        "neighborhood": "West Village",
+        "description": "A dreamy, colorful shop perfect for girlie aesthetic shopping and souvenirs",
+        "tiktok_url": "https://www.tiktok.com/t/ZThWRVKrP/",
+        "address": "247 Bleecker St, New York, NY 10014, USA",
+        "rating": 4.8
+      }
+    }
+  ]
+}
