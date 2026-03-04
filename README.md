@@ -90,6 +90,12 @@ In your fork's repo settings, go to **Pages** and set the source to deploy from 
 
 ## Usage
 
+Every time you open a new terminal, activate the virtual environment first:
+
+```bash
+source .venv/bin/activate
+```
+
 Add TikTok URLs to `urls.txt` (one per line, `#` comments are supported):
 
 ```

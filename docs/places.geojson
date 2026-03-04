@@ -306,26 +306,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.89421220000001,
-          41.5284903
-        ]
-      },
-      "properties": {
-        "name": "Gymkhana Cuisine Of India",
-        "emoji": "🍛",
-        "category": "Restaurant",
-        "neighborhood": null,
-        "description": "One of only two Michelin-starred Indian restaurants in the world (located in London, not NYC). Known for golgappa (traditional street food), butter chicken ($38), tandoori masala lamb chops ($85), and venison biryani served tableside. Dark mahogany interior with velvet seats. Chef grew up in India and has been cooking since age 5.",
-        "tiktok_url": "https://www.tiktok.com/t/ZThngb1r9/",
-        "address": "18 Westage Dr #12, Fishkill, NY 12524, USA",
-        "rating": 4.8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -73.978849,
           40.7295405
         ]
@@ -399,26 +379,6 @@
         "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
         "address": "229 W 43rd St, New York, NY 10036, USA",
         "rating": 4.8
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.95873759999999,
-          40.78348760000001
-        ]
-      },
-      "properties": {
-        "name": "Dr. Minisha Sood, MD",
-        "emoji": "🍛",
-        "category": "Restaurant",
-        "neighborhood": null,
-        "description": "Calsoy (creamy, flavorful with tender chicken)",
-        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
-        "address": "1080 5th Ave # 1a, New York, NY 10128, USA",
-        "rating": 4.4
       }
     },
     {
@@ -959,6 +919,131 @@
         "tiktok_url": "https://www.tiktok.com/t/ZThWRVKrP/",
         "address": "247 Bleecker St, New York, NY 10014, USA",
         "rating": 4.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.987368,
+          40.741295
+        ]
+      },
+      "properties": {
+        "name": "The Clocktower",
+        "emoji": "🍸",
+        "category": "Bar",
+        "neighborhood": "Flatiron",
+        "description": "Bar located on the second floor of the Edition Hotel next to Madison Square Park. Features 30-foot high ceilings covered with old photographs of celebrities, free pool table, well-poured drinks, and a bar menu with enough food to leave feeling full. Separate from the restaurant but serves delicious food. Great for dates or feeling fancy on a budget.",
+        "tiktok_url": "https://www.tiktok.com/t/ZP8QaqAF5/",
+        "address": "5 Madison Ave, New York, NY 10010, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98735769999999,
+          40.741285999999995
+        ]
+      },
+      "properties": {
+        "name": "The New York EDITION",
+        "emoji": "🏨",
+        "category": "Hotel",
+        "neighborhood": "Flatiron",
+        "description": "Hotel next to Madison Square Park that houses The Clocktower Bar on its second floor.",
+        "tiktok_url": "https://www.tiktok.com/t/ZP8QaqAF5/",
+        "address": "5 Madison Ave, New York, NY 10010, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9787253, 40.7527746]
+      },
+      "properties": {
+        "name": "SUMMIT One Vanderbilt",
+        "emoji": "🏙️",
+        "category": "Attraction",
+        "neighborhood": "Midtown Manhattan",
+        "description": "Immersive observation experience atop One Vanderbilt skyscraper near Grand Central. Features glass-walled rooms, mirrored infinity spaces, and outdoor glass box skyboxes with stunning 360° views of the NYC skyline. Tickets are $60+ per person.",
+        "tiktok_url": null,
+        "address": "45 E 42nd St, New York, NY 10017, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0047649, 40.747992499999995]
+      },
+      "properties": {
+        "name": "The High Line",
+        "emoji": "🌳",
+        "category": "Park",
+        "neighborhood": "Chelsea",
+        "description": "Elevated linear park built on a historic freight rail line on Manhattan's West Side. A 1.45-mile greenway with gardens, art installations, and stunning views of the Hudson River and city skyline. Free to visit.",
+        "tiktok_url": null,
+        "address": "New York, NY 10011, USA",
+        "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.979345, 40.758761]
+      },
+      "properties": {
+        "name": "Jellycat Diner at FAO Schwarz",
+        "emoji": "🧸",
+        "category": "Shop",
+        "neighborhood": "Midtown Manhattan",
+        "description": "Interactive Jellycat pop-up experience inside FAO Schwarz where staff \"cook\" and \"serve\" plush Jellycat toys in a diner setting. You pick a plush, they prepare it with pretend grilling and plating, then bag it up for you. A fun, whimsical experience — great for gifts or Jellycat fans.",
+        "tiktok_url": null,
+        "address": "30 Rockefeller Plaza, New York, NY 10111, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9847836, 40.7548306]
+      },
+      "properties": {
+        "name": "Pandora Times Square",
+        "emoji": "🛍️",
+        "category": "Shop",
+        "neighborhood": "Times Square",
+        "description": "Pandora jewelry flagship store in Times Square. Great for picking up charms and bracelets as souvenirs or gifts.",
+        "tiktok_url": null,
+        "address": "110 W 42nd St, New York, NY 10036, USA",
+        "rating": 4.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9872658, 40.7600765]
+      },
+      "properties": {
+        "name": "The Woo Woo",
+        "emoji": "🍸",
+        "category": "Bar",
+        "neighborhood": "Times Square",
+        "description": "Underground speakeasy serving 80s vibes and craft cocktails, hidden beneath The Mean Fiddler in Times Square. Ring the doorbell to get in — you might need a password. Walk-in only after 9pm on Fri/Sat, reservations recommended otherwise. Website: https://www.thewoowoonyc.com/",
+        "tiktok_url": null,
+        "address": "266 W 47th St, New York, NY 10036, USA",
+        "rating": 4.7
       }
     }
   ]
