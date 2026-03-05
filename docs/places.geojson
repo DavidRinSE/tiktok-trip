@@ -1192,6 +1192,23 @@
         "address": "29 Avenue B, New York, NY 10009, USA",
         "rating": 4.5
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9882938, 40.7504817]
+      },
+      "properties": {
+        "name": "Macy's",
+        "emoji": "🛍️",
+        "category": "Shop",
+        "neighborhood": "Herald Square",
+        "description": "The iconic Macy's Herald Square flagship store — the largest department store in the world. Multiple floors of shopping near Times Square.",
+        "tiktok_url": null,
+        "address": "151 W 34th St., New York, NY 10001, USA",
+        "rating": 4.4
+      }
     }
   ]
 }
