@@ -466,26 +466,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.00209389999999,
-          40.7378037
-        ]
-      },
-      "properties": {
-        "name": "Don Angie",
-        "emoji": "🍝",
-        "category": "Restaurant",
-        "neighborhood": null,
-        "description": "Buffalo milk caramel (favorite from the whole spread)",
-        "tiktok_url": "https://www.tiktok.com/t/ZThngkPjW/",
-        "address": "103 Greenwich Ave, New York, NY 10014, USA",
-        "rating": 4.6
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -73.9867455,
           40.7370091
         ]
@@ -699,26 +679,6 @@
         "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
         "address": "14 Wall St, New York, NY 10005, USA",
         "rating": 4.1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9858825,
-          40.7604459
-        ]
-      },
-      "properties": {
-        "name": "Longacre Theatre",
-        "emoji": "🎭",
-        "category": "Attraction",
-        "neighborhood": "Broadway",
-        "description": "Broadway musical - highly recommended. Listen to soundtrack beforehand, even better in person.",
-        "tiktok_url": "https://www.tiktok.com/t/ZThngDrVG/",
-        "address": "220 W 48th St, New York, NY 10036, USA",
-        "rating": 4.6
       }
     },
     {
@@ -1044,6 +1004,91 @@
         "tiktok_url": null,
         "address": "266 W 47th St, New York, NY 10036, USA",
         "rating": 4.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.000615, 40.7237741]
+      },
+      "properties": {
+        "name": "Kendra Scott",
+        "emoji": "🛍️",
+        "category": "Shop",
+        "neighborhood": "SoHo",
+        "description": "Popular jewelry and accessories store in SoHo. Known for their colorful gemstone pieces and custom Color Bar experience where you can design your own jewelry.",
+        "tiktok_url": null,
+        "address": "126 Spring St, New York, NY 10012, USA",
+        "rating": 4.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9831866, 40.7685526]
+      },
+      "properties": {
+        "name": "Bad Roman",
+        "emoji": "🍝",
+        "category": "Restaurant",
+        "neighborhood": "Columbus Circle",
+        "description": "Trendy Italian-American restaurant in the Shops at Columbus Circle. Known for their viral cacio e pepe, rigatoni vodka, and dramatic tableside presentations. Vibrant atmosphere and Instagram-worthy dishes.",
+        "tiktok_url": null,
+        "address": "3rd floor, 10 Columbus Cir, New York, NY 10019, USA",
+        "rating": 4.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.98343559999999, 40.7618723]
+      },
+      "properties": {
+        "name": "Ellen's Stardust Diner",
+        "emoji": "🍽️",
+        "category": "Restaurant",
+        "neighborhood": "Times Square",
+        "description": "Retro 1950s-themed diner where the singing waitstaff perform Broadway hits and pop songs while you eat. A fun, lively experience near Times Square — expect a queue but worth the wait for the atmosphere.",
+        "tiktok_url": null,
+        "address": "1650 Broadway, New York, NY 10019, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9850833, 40.7612917]
+      },
+      "properties": {
+        "name": "Ambassador Theatre",
+        "emoji": "🎭",
+        "category": "Attraction",
+        "neighborhood": "Times Square",
+        "description": "Historic Broadway theatre. We already have tickets to see Chicago here!",
+        "tiktok_url": null,
+        "address": "219 W 49th St, New York, NY 10019, USA",
+        "rating": 4.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9345063, 40.75329120000001]
+      },
+      "properties": {
+        "name": "LIC Manhattan View Hotel",
+        "emoji": "⭐",
+        "category": "Hotel",
+        "neighborhood": "Long Island City",
+        "description": "Our hotel for the trip! Located in Long Island City with views of the Manhattan skyline.",
+        "tiktok_url": null,
+        "address": "39-05 29th St, Long Island City, NY 11101, USA",
+        "rating": 4
       }
     }
   ]
