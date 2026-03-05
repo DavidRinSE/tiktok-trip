@@ -1090,6 +1090,108 @@
         "address": "39-05 29th St, Long Island City, NY 11101, USA",
         "rating": 4
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9719906, 40.7677061]
+      },
+      "properties": {
+        "name": "Central Park Zoo",
+        "emoji": "🐧",
+        "category": "Attraction",
+        "neighborhood": "Central Park",
+        "description": "Compact zoo in the heart of Central Park featuring sea lions, penguins, snow leopards, and more. Great for a quick visit while exploring the park. Book tickets in advance: https://centralparkzoo.com/",
+        "tiktok_url": null,
+        "address": "New York, NY 10021, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0006557, 40.7204822]
+      },
+      "properties": {
+        "name": "Live By The Sword Tattoo",
+        "emoji": "🗡️",
+        "category": "Shop",
+        "neighborhood": "SoHo",
+        "description": "Walk-in friendly tattoo shop in SoHo. Known for quality flash designs and a great spot to get a spontaneous NYC tattoo souvenir.",
+        "tiktok_url": null,
+        "address": "454 Broadway, New York, NY 10013, USA",
+        "rating": 4.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9964228, 40.715968]
+      },
+      "properties": {
+        "name": "Canal & Bowery",
+        "emoji": "🎵",
+        "category": "Attraction",
+        "neighborhood": "Chinatown",
+        "description": "Canal and Bowery intersection landmark.",
+        "tiktok_url": null,
+        "address": "New York, NY 10013, USA",
+        "rating": 3.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.00105500000001, 40.753393599999995]
+      },
+      "properties": {
+        "name": "Edge NYC",
+        "emoji": "🏙️",
+        "category": "Attraction",
+        "neighborhood": "Hudson Yards",
+        "description": "The highest outdoor sky deck in the Western Hemisphere at Hudson Yards. Features a thrilling glass floor section and angled glass walls for jaw-dropping views of the city skyline and Hudson River.",
+        "tiktok_url": null,
+        "address": "30 Hudson Yards, New York, NY 10001, USA",
+        "rating": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.995468, 40.722527]
+      },
+      "properties": {
+        "name": "ENLY",
+        "emoji": "☕",
+        "category": "Cafe",
+        "neighborhood": "Nolita",
+        "description": "Trendy cafe in Nolita known for beautifully crafted drinks and aesthetic interiors. A popular spot for matcha and specialty lattes.",
+        "tiktok_url": null,
+        "address": "227 Mott St, New York, NY 10012, USA",
+        "rating": 4.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9828422, 40.7223962]
+      },
+      "properties": {
+        "name": "Sunday Morning",
+        "emoji": "☕",
+        "category": "Cafe",
+        "neighborhood": "East Village",
+        "description": "Cozy East Village cafe with a warm, relaxed vibe. Great for brunch and coffee.",
+        "tiktok_url": null,
+        "address": "29 Avenue B, New York, NY 10009, USA",
+        "rating": 4.5
+      }
     }
   ]
 }
